@@ -335,9 +335,9 @@ margin-left: 8%;
 .slider2 .item p{
     padding:10px 0 20px;
 }
-.slider2 .item .btn-line-under{
+/* .slider2 .item .btn-line-under{
   color:#333;
-}
+} */
 .slick-slider .slick-arrow-left, .slick-slider .slick-arrow-right {
     height: 3rem;
     width: 3rem;

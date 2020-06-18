@@ -443,6 +443,7 @@ background: url("../images/bg-triangle-1.png") no-repeat calc(100% - 15px) 0;
  }
   .widgetholder p{
     margin-bottom: 30px;
+    text-align: justify;
   }
 
   .features-widget{

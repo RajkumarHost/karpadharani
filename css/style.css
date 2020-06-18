@@ -243,17 +243,17 @@ align-items: center;
   float: left;
     }
 .slider2 {
-    background: url("../images/slide-2-bg.jpg") no-repeat;
+    background: url("../images/slide-2-bg.jpg") no-repeat !important;
         background-size: auto;
     background-size: cover;
 }
 .slider3 {
-  background: url("../images/slide-3-bg.jpg") no-repeat;
+  background: url("../images/slide-3-bg.jpg") no-repeat !important;
       background-size: auto;
   background-size: cover;
 }
 .slider4 {
-  background: url("../images/slide-1-bg.png") no-repeat;
+  background: url("../images/slide-1-bg.png") no-repeat !important;
       background-size: auto;
   background-size: cover;
 }

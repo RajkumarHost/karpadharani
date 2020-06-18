@@ -247,12 +247,12 @@ align-items: center;
         background-size: auto;
     background-size: cover;
 }
-.slider2.slider3 {
+.slider-item.slider2.slide-3 {
   background: url("../images/slide-3-bg.jpg") no-repeat !important;
       background-size: auto;
   background-size: cover;
 }
-.slider2.slider4 {
+.slider-item.slider2.slide-4 {
   background: url("../images/slide-1-bg.png") no-repeat !important;
       background-size: auto;
   background-size: cover;

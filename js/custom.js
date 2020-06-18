@@ -29,22 +29,22 @@ $(document).ready( function() {
 	      speed: 1000,
 	      infinite: true,
 	      centerMode: true,
-		  slidesToShow:5,
+		  slidesToShow:1,
 		  centerPadding: 0,
 		  arrows:false,
 		  responsive:[
                {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 5,
-              slidesToScroll: 5,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               centerMode: true
             }
           }, {
             breakpoint: 768,
             settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             centerMode: true
             }
           }, {
@@ -57,11 +57,56 @@ $(document).ready( function() {
           }
            ]
 		});
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
+$(document).on('click','.nav-container ul li',function(){
+  	 var ind = $(this).data('ind'),
+         scrollsection = $("." + ind).offset().top - 35;
+         $('html, body').animate({ scrollTop: scrollsection }, 400);
+         
+  });
+
+var $slider = $('.slicksliderhead,.quote-item');
+
+var $nav = $('.slick-slider-controls');
+          if( $nav.length ) {
+
+            // Left Button
+            var $left = $nav.find('.slick-slider-left');
+            if( $left.length ) {
+              $left.on('click', function() {
+                $slider.slick('slickPrev');
+              });
+            }
+
+            // Right Button
+            var $right = $nav.find('.slick-slider-right');
+            if( $right.length ) {
+              $right.on('click', function() {
+                $slider.slick('slickNext');
+              });
+            }
+       }
+var headeactive = function(){
+		if($(window).scrollTop() > $('.widgetholder').offset().top - 70){
+			$('.header-navbar').addClass('shrink');
+		}	
+		else{
+			$('.header-navbar').removeClass('shrink');
+		}
+
+	}
+$(window).scroll(function(){
+			
+			headeactive();	
+		});       
+$(document).on('click','.views a',function(){
+		if($(this).text() == "view more"){
+			$('.gallerywidget').find('#gallerysecond,#gallerythird').removeClass('hide');
+		    $(this).text('view less');
+		}
+		else{
+			$('.gallerywidget').find('#gallerysecond,#gallerythird').addClass('hide');
+		    $(this).text('view more');
+		}
+});     
+
   });

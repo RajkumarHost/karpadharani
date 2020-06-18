@@ -248,12 +248,12 @@ align-items: center;
     background-size: cover;
 }
 .slider-item.slider2.slide-3 {
-  background: url("../images/slide-3-bg.jpg") no-repeat !important;
+  background: url("../images/slide-3-bg.jpg") no-repeat;
       background-size: auto;
   background-size: cover;
 }
 .slider-item.slider2.slide-4 {
-  background: url("../images/slide-1-bg.png") no-repeat !important;
+  background: url("../images/slide-1-bg.png") no-repeat;
       background-size: auto;
   background-size: cover;
 }

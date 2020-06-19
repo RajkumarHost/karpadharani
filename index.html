@@ -13,6 +13,12 @@
 </head>
 <body>
 	<div id="wrapper" class="wrapper">
+    <section class="inner-popup">
+            <div class="innr-wrap">
+            <div class="txt-title ctn">Enquiry</div>
+            </div>
+          </section>
+
 		<div class="modal popup">
 			<div class="modal-dialog">
 				 <div class="modal-content">
@@ -20,16 +26,30 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
                         </button>
                         <div class="row flx">
-                            <div class="col-7">
+                            <div class="col-12">
                                 <p>For your convenience</p>
-                                <p id="newsletter-modal__subtitle">Try us out - cancel any time</p>
+                                <p id="newsletter-modal__subtitle">Try us out</p>
                                 <form class="form mb-5">
                                     <div class="form-group">
+                                        <input type="text" name="newsletter_name" id="newsletter_name" placeholder="Enter your Name ..." class="form-control">
+                                       
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="newsletter_mobile" id="newsletter_mobile" placeholder="Enter your Mobile Number ..." class="form-control">
+                                       
+                                    </div>
+                                    <div class="form-group">
                                         <input type="email" name="newsletter_email" id="newsletter_email" placeholder="Enter your email address ..." class="form-control">
+                                       
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <textarea id="msg" rows="4" placeholder="Your message goes here..." class="form-control"></textarea>
+                                       
                                     </div>
                            
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-fancy">Start Free Trial<i class="ml-3 feather-arrow-right"></i>
+                                        <button type="submit" class="btn btn-fancy">Send<i class="ml-3 feather-arrow-right"></i>
                                         </button>
                                     </div>
                       
@@ -37,9 +57,9 @@
                                
                             </div>
                         
-                            <div id="newsletter-modal__side-col" class="flx"><small>Yoga classes for all</small>
+                            <!-- <div id="newsletter-modal__side-col" class="flx"><small>Yoga classes for all</small>
                                 <h2 id="newsletter-modal__side-col-title">Own your practice</h2>
-                            </div>
+                            </div> -->
                     
                         </div>
                
@@ -82,7 +102,7 @@
                 <h2 class="text-white">
                Be a super mom!
                 </h2>
-                <a href="javascript:void(0)" class="btn btn-fancy arrow-right">Sign Up Now </a>
+                <a href="javascript:void(0)" class="btn btn-fancy arrow-right popopen">Sign Up Now </a>
                 <!-- <a href="javascript:void(0)" class="btn btn-line-under">Explore Details</a> -->
            </div>	
           </div>
@@ -92,7 +112,7 @@
                 <h2 class="text-white">
                Prepare to fall in love  <br> for lifetime.
                 </h2>
-                <a href="javascript:void(0)" class="btn btn-fancy arrow-right">Sign Up Now </a>
+                <a href="javascript:void(0)" class="btn btn-fancy arrow-right popopen">Sign Up Now </a>
                 <!-- <a href="javascript:void(0)" class="btn btn-line-under">Explore Details</a> -->
            </div>	
           </div>
@@ -108,7 +128,7 @@
                 <br>
                 the developement of self-awareness	                                                                                
                 </p> -->
-                 <a href="javascript:void(0)" class="btn btn-fancy arrow-right">Sign Up Now </a>
+                 <a href="javascript:void(0)" class="btn btn-fancy arrow-right popopen">Sign Up Now </a>
                 <!-- <a href="javascript:void(0)" class="btn btn-line-under">Explore Details</a> -->
            </div>	
           </div>
@@ -124,7 +144,7 @@
                 <br>
                 the developement of self-awareness	                                                                                
                 </p> -->
-                 <a href="javascript:void(0)" class="btn btn-fancy arrow-right">Sign Up Now </a>
+                 <a href="javascript:void(0)" class="btn btn-fancy arrow-right popopen">Sign Up Now </a>
                 <!-- <a href="javascript:void(0)" class="btn btn-line-under">Explore Details</a> -->
            </div>	
           </div>
@@ -209,7 +229,7 @@
                </div>
                <div class="col-4">
                        <div class="feature-image">
-                           <img src="images/features.jpg" alt=""/>
+                           <img src="images/whatwe.jpg" alt=""/>
                        </div>
                </div>
           </div>
@@ -404,7 +424,7 @@
 	 	 		</div>
 	 	 		<div class="col-5">
 	 	 		   <div class="fig-gal" id="gallery-4">
-	 	 	   	     <img src="./images/gallery-4.jpg" alt="">
+	 	 	   	     <img src="./images/gallery-4.JPG" alt="">
 	 	 	   	     <a href="javascript:void(0)">Gallery 2</a>
 	 	 	   	     <figcaption>Gallery 2</figcaption>
 	 	 	      </div>
@@ -412,7 +432,7 @@
 	 	 	</div>	
 	 	 	<div class="col-5 flx">
 	 	 		<div class="fig-gal" id="gallery-1">
-	 	 	   	     <img src="./images/gallery-12.JPG" alt="">
+	 	 	   	     <img src="./images/gallery-1.JPG" alt="">
 	 	 	   	     <a href="javascript:void(0)">Gallery 2</a>
 	 	 	   	     <figcaption>Gallery 1</figcaption>
 	 	 	      </div>
@@ -421,38 +441,38 @@
      <div class="widgetwrap hide" id="gallerysecond">
       <div class="col-5 flx flx-wrap">
         <div class="col-5">
-           <div class="fig-gal">
-               <img src="./images/gallery-6.JPG" alt="">
+           <div class="fig-gal" id="gallery-5">
+               <img src="./images/gallery-5.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
     
         <div class="col-5">
-           <div class="fig-gal">
-               <img src="./images/gallery-7.jpg" alt="">
+           <div class="fig-gal" id="gallery-6">
+               <img src="./images/gallery-6.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
         <div class="col-5">
-           <div class="fig-gal" id="gallery-3">
-               <img src="./images/gallery-113.jpg" alt="">
+           <div class="fig-gal" id="gallery-7">
+               <img src="./images/gallery-7.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
         <div class="col-5">
-           <div class="fig-gal" id="gallery-4">
-               <img src="./images/gallery-9.jpg" alt="">
+           <div class="fig-gal" id="gallery-8">
+               <img src="./images/gallery-8.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
       </div>  
       <div class="col-5 flx">
-        <div class="fig-gal" id="gallery-1">
-               <img src="./images/gallery-10.jpg" alt="">
+        <div class="fig-gal" id="gallery-9">
+               <img src="./images/gallery-9.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 1</figcaption>
             </div>
@@ -461,38 +481,118 @@
      <div class="widgetwrap hide" id="gallerythird">
       <div class="col-5 flx flx-wrap">
         <div class="col-5">
-           <div class="fig-gal">
-               <img src="./images/gallery-2.JPG" alt="">
+           <div class="fig-gal" id="gallery-10">
+               <img src="./images/gallery-10.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
     
         <div class="col-5">
-           <div class="fig-gal">
-               <img src="./images/gallery-120.jpg" alt="">
+           <div class="fig-gal" id="gallery-11">
+               <img src="./images/gallery-11.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
         <div class="col-5">
-           <div class="fig-gal" id="gallery-3">
-               <img src="./images/gallery-3.JPG" alt="">
+           <div class="fig-gal" id="gallery-12">
+               <img src="./images/gallery-12.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
         <div class="col-5">
-           <div class="fig-gal" id="gallery-4">
-               <img src="./images/gallery-112.jpg" alt="">
+           <div class="fig-gal" id="gallery-13">
+               <img src="./images/gallery-13.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 2</figcaption>
             </div>
         </div>
       </div>  
       <div class="col-5 flx">
-        <div class="fig-gal" id="gallery-1">
-               <img src="./images/gallery-1.JPG" alt="">
+        <div class="fig-gal" id="gallery-14">
+               <img src="./images/gallery-14.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 1</figcaption>
+            </div>
+      </div>
+     </div>
+     <div class="widgetwrap hide" id="gallerythird">
+      <div class="col-5 flx flx-wrap">
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-15">
+               <img src="./images/gallery-15.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+    
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-16">
+               <img src="./images/gallery-16.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-17">
+               <img src="./images/gallery-17.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-17">
+               <img src="./images/gallery-17.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+      </div>  
+      <div class="col-5 flx">
+        <div class="fig-gal" id="gallery-18">
+               <img src="./images/gallery-18.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 1</figcaption>
+            </div>
+      </div>
+     </div>
+     <div class="widgetwrap hide" id="gallerythird">
+      <div class="col-5 flx flx-wrap">
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-19">
+               <img src="./images/gallery-19.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+    
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-20">
+               <img src="./images/gallery-20.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-21">
+               <img src="./images/gallery-21.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+        <div class="col-5">
+           <div class="fig-gal" id="gallery-22">
+               <img src="./images/gallery-22.JPG" alt="">
+               <a href="javascript:void(0)">Gallery 2</a>
+               <figcaption>Gallery 2</figcaption>
+            </div>
+        </div>
+      </div>  
+      <div class="col-5 flx">
+        <div class="fig-gal" id="gallery-23">
+               <img src="./images/gallery-23.JPG" alt="">
                <a href="javascript:void(0)">Gallery 2</a>
                <figcaption>Gallery 1</figcaption>
             </div>
@@ -508,11 +608,11 @@
 <div class="testimonial-widget">
 	<div class="main-wrapper">
 		 <div class="row text-center">
-	 	  	 <h6 class="fancesetting">
+	 	  	 <!-- <h6 class="fancesetting">
   	 		    <span class="title">Latest From Our Blog</span>
-  	 		 </h6>
+  	 		 </h6> -->
   	 		 <h2 class="fancy-heading">What real people say <br>
-about our studio</h2>
+about our Karpadharani.</h2>
 	 	  </div>
 
 	 	  <div class="quotes-carousel-container">
@@ -627,6 +727,33 @@ about our studio</h2>
 
 </div>
 
+<div class="videogalley">
+   <div class="main-wrapper">
+     <div class="gvideos">
+        <div class="slide-video">
+            <video controls>
+            <source src="images/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slide-video">
+            <video controls>
+            <source src="images/video2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slide-video">
+            <video controls>
+            <source src="images/video3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slide-video">
+            <video controls>
+            <source src="images/video4.mp4" type="video/mp4">
+            </video>
+        </div>
+     </div>
+   </div>
+</div>
+
 <!-- <div class="newsletter">
 	<div class="main-wrapper">
 		 	<div class="row text-center">
@@ -694,9 +821,9 @@ about our studio</h2>
 		 	  	     	 <ul class="social-list">
                             <li><a href="twitter.com" class="bg-twitter"></a>
                             </li>
-                            <li><a href="facebook.com" class="bg-facebook"></a>
+                            <li><a href="https://www.facebook.com/karpadharani/?modal=admin_todo_tour" target="_blank" class="bg-facebook"></a>
                             </li>
-                            <li><a href="instagram.com" class="bg-instagram"></a>
+                            <li><a href="https://www.instagram.com/karpadharanicoimbatore/" target="_blank" class="bg-instagram"></a>
                             </li>
                             <li><a href="youtube.com" class="bg-youtube"></a>
                             </li>

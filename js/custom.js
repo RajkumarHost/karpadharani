@@ -1,11 +1,11 @@
 $(document).ready( function() {
 		$('.slick-slider').slick({
 		  slidesToShow: 1,
-                  autoplay: false,
-                  autoplaySpeed: 2500,
-                  speed: 1000,
-                  infinite: false,
-                  dots: false,
+	      autoplay: false,
+	      autoplaySpeed: 2500,
+	      speed: 1000,
+	      infinite: false,
+	      dots: false,
         fade: true,
         prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
         nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
@@ -19,8 +19,8 @@ $(document).ready( function() {
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
-        focusOnSelect: true,
-        arrows:false,
+          focusOnSelect: true,
+          arrows:false,
 		});
 
 		$('.slicksliderhead').slick({
@@ -57,6 +57,18 @@ $(document).ready( function() {
           }
            ]
 		});
+
+$('.gvideos').slick({
+		slidesToShow: 1,
+		autoplay: false,
+		autoplaySpeed: 2500,
+		speed: 1000,
+		infinite: false,
+		dots: false,
+        prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
+        nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
+        focusOnSelect: true,
+		});	
 $(document).on('click','.nav-container ul li',function(){
   	 var ind = $(this).data('ind'),
          scrollsection = $("." + ind).offset().top - 35;
@@ -94,10 +106,40 @@ var headeactive = function(){
 		}
 
 	}
-$(window).scroll(function(){
-			
+
+var openPop = function(){
+	$('.modal').css('display','block');
+	setTimeout(function(){
+		$('.modal').addClass('open');
+	},400);
+	$('body').css('overflow','hidden');
+}	
+setTimeout(function(){
+	openPop();
+},300);
+
+$(document).on('click','.popopen',function(){
+	$('.modal').css('display','block');
+	setTimeout(function(){
+		$('.modal').addClass('open');
+	},400);
+	$('body').css('overflow','hidden');
+	
+});
+
+$(document).on('click','.inner-popup',function(){
+	$('.popopen').trigger('click');
+});
+$(document).on('click','.modal .close',function(){
+    $('.modal').css('display','none').removeClass('open');
+	$('body').css('overflow','auto');
+	setTimeout(function(){
+		$('.inner-popup').addClass('active');
+	},200);
+});
+$(window).scroll(function(){		
 			headeactive();	
-		});       
+});       
 $(document).on('click','.views a',function(){
 		if($(this).text() == "view more"){
 			$('.gallerywidget').find('#gallerysecond,#gallerythird').removeClass('hide');

@@ -157,7 +157,7 @@ color: #000;
 .header-navbar .navbar-brand img {
     height: auto;
     max-height: 100%;
-    width: 135px;
+    width: 180px;
 }
 .header-navbar .navbar-brand img.dark-logo,.header-navbar.shrink .navbar-brand img.light-logo{
   opacity: 0;
@@ -190,7 +190,7 @@ color: #222;
   opacity: 1;
   visibility: visible;
   display: block;
-  width: 110px;
+  width: 160px;
 }
 .header-navbar.shrink{
   background: #fff !important;

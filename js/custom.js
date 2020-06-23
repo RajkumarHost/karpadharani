@@ -149,6 +149,19 @@ $(document).on('click','.views a',function(){
 			$('.gallerywidget').find('#gallerysecond,#gallerythird').addClass('hide');
 		    $(this).text('view more');
 		}
-});     
+});  
+
+$(document).on('click','.hamburger',function(){
+	$('nav').css('display','block');
+	setTimeout(function(){
+		$('nav').addClass('open');
+	},300);
+});
+$(document).on('click','.close',function(){
+	$('nav').removeClass('open');
+	setTimeout(function(){
+		$('nav').css('display','none');
+	},300);
+});   
 
   });

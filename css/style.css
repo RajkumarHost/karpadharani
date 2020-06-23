@@ -181,7 +181,10 @@ nav ul > li {
     transition:0.4s ease;
 }
 nav ul > li:hover{
-color: var(--tertiary);
+color: #222;
+}
+.header-navbar.shrink nav ul > li:hover{
+  color:#409d99;
 }
 .header-navbar.shrink .navbar-brand img.dark-logo{
   opacity: 1;
@@ -1622,13 +1625,50 @@ footer p{
 transform:translateY(0);
 
 }
+.eventscont h2{
+  font-size: 36px;
+}
+.eventscont p{
+color: #222;
+}
 .double-quote{
 font-size: 12px;
 margin-top: 18px;
 }
 .eventscont{
 text-align: center;
-padding: 25px;
+padding: 35px;
+display: none;
+}
+.eventscont.curriculum .event-list,.eventscont.faq .event-list{
+  text-align: left;
+}
+
+.eventscont.curriculum .event-list ul li,.eventscont.faq .event-list ul li{
+list-style: disc;
+margin-bottom:8px; 
+color: #333;
+}
+.eventscont.curriculum .event-list ul,.eventscont.faq .event-list ul{
+  padding-left: 18px;
+}
+.eventscont.curriculum .event-list h4{
+font-size: 24px;
+}
+.eventscont.faq .event-list ul li{
+  list-style: decimal;
+  color: #222;
+   font-weight: 500; 
+}
+.eventscont.faq .event-list ul li .heading{
+    color: #222;
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 8px;
+}
+.eventscont.faq .event-list ul li p{
+  color:#222;
+  font-weight: 400;
 }
 .modal.open,.event-pop.open{
 background-color: rgba(0,0,0,0.8);
@@ -1691,6 +1731,10 @@ transition:all 0.8s ease;
   border:none;
   cursor: pointer;
 }
+.modal .close:hover, .event-pop .close:hover
+{
+    background-color: #409d99;
+}
 .close {
   font-size: 1.40625rem;
   font-weight: 700;
@@ -1711,6 +1755,13 @@ display: flex;
 flex-wrap: wrap;
 margin-right: -15px;
 margin-left: -15px;
+
+}
+.event-pop .modal-content .row{
+align-items: center;
+max-height: calc(100vh - 130px);
+overflow-y: auto;
+overflow-x: hidden;
 }
 .modal-content p{
 margin-bottom: 1.5rem;
@@ -1977,4 +2028,9 @@ textarea.form-control{
 }
 .weekly-classes p{
   line-height: 1.7
+}
+#top-notch{
+  max-width:80%;
+  margin:0 auto;
+  text-align: justify;
 }

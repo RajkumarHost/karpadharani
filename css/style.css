@@ -1831,11 +1831,11 @@ display:none;
     cursor: pointer;
     border: 1px solid #409d99;
     background-color:#409d99;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     transition:all 0.8s ease;
     transform: rotate(-90deg);
-    right: -70px;
+    right: -30px;
     /*display: none;*/
 }
 .gvideos{

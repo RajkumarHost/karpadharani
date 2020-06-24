@@ -2,30 +2,30 @@ $(document).ready( function() {
 		$('.slick-slider').slick({
 		  slidesToShow: 1,
 	      autoplay: true,
-	      autoplaySpeed: 1000,
+	      autoplaySpeed: 2000,
 	      speed: 1000,
 	      infinite: true,
-		  dots: false,
-		fade: true,
+	      dots: false,
+        fade: true,
         prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
-		nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
-		pauseOnHover:false,
+        nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
+       pauseOnHover:false,
 		});
 
 		$('.quote-item').slick({
 		  slidesToShow: 1,
-          autoplay: true,
-		  autoplaySpeed: 1000,
-		  pauseOnHover: flase,
+          autoplay: false,
+	      autoplaySpeed: 2500,
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
+          focusOnSelect: true,
           arrows:false,
 		});
 
 		$('.slicksliderhead').slick({
-          autoplay: true,
-	      autoplaySpeed: 1000,
+          autoplay: false,
+	      autoplaySpeed: 2500,
 	      speed: 1000,
 	      infinite: true,
 	      centerMode: true,
@@ -171,7 +171,7 @@ $(document).on('click','.widget-bg .views a',function(){
 		$('.widget-bg').find('#top-notch').addClass('hide');
 		$(this).text('view more');
 	}
-});  
+}); 
 
 $(document).on('click','.hamburger',function(){
 	$('nav').css('display','block');

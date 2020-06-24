@@ -4,12 +4,12 @@ $(document).ready( function() {
 	      autoplay: true,
 	      autoplaySpeed: 1500,
 	      speed: 1000,
-	      infinite: false,
+	      infinite: true,
 	      dots: false,
-        fade: true,
+		fade: true,
         prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
         nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
-        focusOnSelect: true,
+        focusOnSelect: false,
 		});
 
 		$('.quote-item').slick({
@@ -19,7 +19,7 @@ $(document).ready( function() {
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
-          focusOnSelect: true,
+          focusOnSelect: false,
           arrows:false,
 		});
 
@@ -71,7 +71,7 @@ $('.gvideos').slick({
 		});	
 $(document).on('click','.nav-container ul li',function(){
   	     var ind = $(this).data('ind'),
-         scrollsection = $("." + ind).offset().top - 80;
+         scrollsection = $("." + ind).offset().top - 50;
          $('html, body').animate({ scrollTop: scrollsection }, 400);
          $('.nav-container').removeClass('open');
 });
@@ -151,7 +151,7 @@ $(document).on('click','.event-pop .close',function(){
 $(window).scroll(function(){		
 	headeactive();	
 });       
-$(document).on('click','.views a',function(){
+$(document).on('click','.gallerywidget .views a',function(){
 		if($(this).text() == "view more"){
 			$('.gallerywidget').find('#gallerysecond,#gallerythird').removeClass('hide');
 		    $(this).text('view less');

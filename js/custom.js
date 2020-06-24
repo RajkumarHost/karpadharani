@@ -2,7 +2,7 @@ $(document).ready( function() {
 		$('.slick-slider').slick({
 		  slidesToShow: 1,
 	      autoplay: true,
-	      autoplaySpeed: 1500,
+	      autoplaySpeed: 1000,
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
@@ -15,7 +15,7 @@ $(document).ready( function() {
 		$('.quote-item').slick({
 		  slidesToShow: 1,
           autoplay: true,
-	      autoplaySpeed: 1500,
+	      autoplaySpeed: 1000,
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
@@ -25,7 +25,7 @@ $(document).ready( function() {
 
 		$('.slicksliderhead').slick({
           autoplay: true,
-	      autoplaySpeed: 1500,
+	      autoplaySpeed: 1000,
 	      speed: 1000,
 	      infinite: true,
 	      centerMode: true,

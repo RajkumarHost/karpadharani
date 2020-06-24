@@ -5,21 +5,21 @@ $(document).ready( function() {
 	      autoplaySpeed: 1000,
 	      speed: 1000,
 	      infinite: true,
-	      dots: false,
+		  dots: false,
 		fade: true,
         prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
-        nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
-        focusOnSelect: false,
+		nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
+		pauseOnHover:false,
 		});
 
 		$('.quote-item').slick({
 		  slidesToShow: 1,
           autoplay: true,
-	      autoplaySpeed: 1000,
+		  autoplaySpeed: 1000,
+		  pauseOnHover: flase,
 	      speed: 1000,
 	      infinite: true,
 	      dots: false,
-          focusOnSelect: false,
           arrows:false,
 		});
 

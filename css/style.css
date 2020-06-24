@@ -139,6 +139,7 @@ transition: all 0.5s ease;
     display: flex;
 align-items: center;
 width: 20%;
+height:80px;
 }
 .navbar-brand{
   margin-right: 1rem;
@@ -157,7 +158,7 @@ color: #000;
 .header-navbar .navbar-brand img {
     height: auto;
     max-height: 100%;
-    width: 180px;
+    width: 200px;
 }
 .header-navbar .navbar-brand img.dark-logo,.header-navbar.shrink .navbar-brand img.light-logo{
   opacity: 0;
@@ -2033,4 +2034,7 @@ textarea.form-control{
   max-width:80%;
   margin:0 auto;
   text-align: justify;
+}
+.header-navbar.shrink .navbar-header{
+  height: 60px;
 }

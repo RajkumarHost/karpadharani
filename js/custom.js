@@ -21,6 +21,7 @@ $(document).ready( function() {
 	      dots: false,
           focusOnSelect: true,
           arrows:false,
+          adaptiveHeight: true,
 		});
 
 		$('.slicksliderhead').slick({
@@ -71,7 +72,7 @@ $('.gvideos').slick({
 		});	
 $(document).on('click','.nav-container ul li',function(){
   	     var ind = $(this).data('ind'),
-         scrollsection = $("." + ind).offset().top - 50;
+         scrollsection = $("." + ind).offset().top - 80;
          $('html, body').animate({ scrollTop: scrollsection }, 400);
          $('.nav-container').removeClass('open');
 });
@@ -114,7 +115,32 @@ var openPop = function(){
 setTimeout(function(){
 	openPop();
 },300);
-
+var sections = $('.sect'),
+     nav = $('.nav-container'),
+     nav_height = $('.navbar').outerHeight();
+ var navscrollactive = function(){
+        var cur_pos = $(this).scrollTop() + 400;
+        sections.each(function(index) {
+          var top = $(this).offset().top - nav_height,
+              bottom = top + $(this).outerHeight();
+          if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('li').removeClass('active');
+            $('.nav-container li').eq(index).addClass('active');
+          }
+        });
+      }
+ var visible;
+            var sectionAnimation = function(){
+               $('.to-animate').each(function(index, element){
+               var $this = $(this),dataAnimate = $(this).data('animate'),$delay = $(this).data('delay');
+               visible = isInViewport(this);   
+                if(visible){
+                      setTimeout(function(){
+                         $this.addClass(dataAnimate);
+                      },$delay);
+                  }
+               });
+ };      
 $(document).on('click','.popopen',function(){
 	$('.modal').css('display','block');
 	setTimeout(function(){
@@ -150,26 +176,28 @@ $(document).on('click','.event-pop .close',function(){
 });
 $(window).scroll(function(){		
 	headeactive();	
+	navscrollactive();
+	sectionAnimation();
 });       
 $(document).on('click','.gallerywidget .views a',function(){
-		if($(this).text() == "view more"){
+		if($(this).text() === "View more"){
 			$('.gallerywidget').find('#gallerysecond,#gallerythird').removeClass('hide');
-		    $(this).text('view less');
+		    $(this).text('View less');
 		}
 		else{
 			$('.gallerywidget').find('#gallerysecond,#gallerythird').addClass('hide');
-		    $(this).text('view more');
+		    $(this).text('View more');
 		}
 });  
 
 $(document).on('click','.widget-bg .views a',function(){
-	if($(this).text() == "view more"){
+	if($(this).text() == "View more"){
 		$('.widget-bg').find('#top-notch').removeClass('hide');
-		$(this).text('view less');
+		$(this).text('View less');
 	}
 	else{
 		$('.widget-bg').find('#top-notch').addClass('hide');
-		$(this).text('view more');
+		$(this).text('View more');
 	}
 }); 
 
@@ -186,4 +214,15 @@ $(document).on('click','.close',function(){
 	},300);
 });   
 
+
+function isInViewport(node) {
+  var rect = node.getBoundingClientRect()
+  return (
+    (rect.height > 0 || rect.width > 0) &&
+    rect.bottom >= 0 &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  )
+}
   });

@@ -72,7 +72,7 @@ $('.gvideos').slick({
 		});	
 $(document).on('click','.nav-container ul li',function(){
   	     var ind = $(this).data('ind'),
-         scrollsection = $("." + ind).offset().top - 80;
+         scrollsection = $("." + ind).offset().top - 50;
          $('html, body').animate({ scrollTop: scrollsection }, 400);
          $('.nav-container').removeClass('open');
 });

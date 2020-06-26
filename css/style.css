@@ -365,7 +365,7 @@ margin-left: 8%;
 }
 .slider2 .item h2 {
     font-size: 5.13vmax;
-    line-height: 1;
+    line-height: 1.12;
     text-transform: none;
 }
 .slider2 .item p{
@@ -1839,7 +1839,7 @@ z-index: 14;
     visibility: visible;
     transition:all 0.8s ease;
     transform: rotate(-90deg);
-    right: -30px;
+    right: -23px;
     /*display: none;*/
 }
 .gvideos{
@@ -1852,6 +1852,9 @@ z-index: 14;
   width: 60%;
   margin: 0 auto;
   justify-content: center;
+}
+.slide-video video{
+width: 60%;
 }
 .inner-popup .innr-wrap {
     display: flex;
@@ -1866,7 +1869,6 @@ z-index: 14;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 12px;
 }
 .nav-container .close{
   display: none;
@@ -2038,7 +2040,7 @@ flex-flow: column;
     padding: 0.3em .5em 0.3em;
   }
   .header-navbar .navbar-header{
-    width: 180px;
+    width: 160px;
   }
   .slick-slider .slick-arrow-left, .slick-slider .slick-arrow-right {
     height: 2.5rem;
@@ -2058,6 +2060,22 @@ flex-flow: column;
   }
   .weekly-classes{
     font-size: 13px;
+  }
+  .social-list a {
+    height: 2.625rem;
+    width: 2.625rem;
+  }
+  .eventscont{
+    padding: 20px;
+  }
+  .eventscont h2 {
+    font-size: 24px;
+  }
+  .header-navbar{
+    padding: 0 1.075rem;
+  }
+  .slide-video video{
+    width: 90%;
   }
 }
 .modal-body .col-12{

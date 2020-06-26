@@ -64,11 +64,10 @@ $('.gvideos').slick({
 		autoplay: false,
 		autoplaySpeed: 2500,
 		speed: 1000,
-		infinite: false,
+		infinite: true,
 		dots: false,
         prevArrow: "<a href='javascript: void(0);' class='slick-arrow-left'></a>",
         nextArrow: "<a href='javascript: void(0);' class='slick-arrow-right'></a>",
-        focusOnSelect: true,
 		});	
 $(document).on('click','.nav-container ul li',function(){
   	     var ind = $(this).data('ind'),
